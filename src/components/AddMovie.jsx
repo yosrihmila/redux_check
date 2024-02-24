@@ -13,18 +13,18 @@ function AddMovie() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-   
+
     const [movieInfo,setMovie]=useState()
 
     const dispatch=useDispatch()
     const add=()=>{
-       dispatch(addMovie(movieInfo))
-       setShow(false)
+    dispatch(addMovie(movieInfo))
+    setShow(false)
     }   
-     return (
+    return (
         <>
             <Button onClick={handleShow}>
-               Add task
+            Add task
             </Button>
 
             <Modal show={show} onHide={handleClose}>

@@ -1,7 +1,7 @@
 import './App.css';
 import MovieList from './components/MovieList';
 import { Route, Routes } from 'react-router-dom';
-import MovieDesc from './components/MovieDesc';
+import TaskDesc from './components/TaskDesc';
 
 function App() {
   return (

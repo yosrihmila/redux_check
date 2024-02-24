@@ -26,7 +26,7 @@ export const movieSlice=createSlice({
             state.originalList.push(action.payload)
         },
         filterMovie:(state,action)=>{
-            state.movieList=state.originalList.filter(e=>e.id.toUpperCase().includes(action.payload.toUpperCase()))
+            state.movieList=state.originalList.filter(e=>e.Doneornot.toUpperCase().includes(action.payload.toUpperCase()))
         }
     }   
 })

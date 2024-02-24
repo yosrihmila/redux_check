@@ -9,11 +9,11 @@ function MovieList() {
 
   const {movieList} = useSelector(state=>state.movieReducer)
   const dispatch=useDispatch()
- 
+
   return (
     <div style={{display:"flex" ,alignItems:"center" ,gap:"2vw",flexDirection:"column"}}>
         <div>
-        <input type='text' placeholder='search a task' onChange={(e)=>{dispatch(filterMovie(e.target.value))}}></input>
+        <input type='text' placeholder='Doneornot task' onChange={(e)=>{dispatch(filterMovie(e.target.value))}}></input>
         <AddMovie></AddMovie>
         </div>
         <div style={{display:"flex" ,justifyContent:"center" ,gap:"2vw"}}>

@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { NavLink, useParams } from 'react-router-dom'
 
-function MovieDesc() {
+function TaskDesc() {
 
   const {id}=useParams()
   const {movieList}=useSelector(state=>state.movieReducer)
@@ -22,4 +22,4 @@ function MovieDesc() {
   )
 }
 
-export default MovieDesc
+export default TaskDesc
